@@ -7,5 +7,6 @@ source "http://rubygems.org"
 # Include everything needed to run rake, tests, features, etc.
 gem "sinatra"
 gem "yard"
+gem "yard-tomdoc"
 gem "redcarpet"
 gem "thin"
