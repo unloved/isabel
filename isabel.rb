@@ -7,6 +7,6 @@ use YARD::Server::RackMiddleware, :libraries => $libraries, :options => $options
 
 post '/reload' do
   push = JSON.parse(params[:payload])
-  "I got some JSON: #{push.inspect}"
+  $stderr.puts "I got some JSON: #{push.inspect}"
   system "cd #{$repo_path}/; git pull; yard doc;"
 end
